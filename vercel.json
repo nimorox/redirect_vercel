@@ -4,5 +4,11 @@
       "src": "/(.*)",
       "dest": "/api/redirect.js"
     }
-  ]
+  ],
+  "functions": {
+    "api/redirect.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
 }
