@@ -1,16 +1,15 @@
 {
-  "name": "redirect_vercel",
+  "name": "redirect-vercel",
   "version": "1.0.0",
   "description": "Vercel app for redirecting to assurance-maladie-cpam with IP restrictions",
   "main": "api/redirect.js",
   "dependencies": {
-    "ip-range-check": "^0.2.0",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.6.7",
+    "ip-range-check": "^0.2.0"
   },
   "scripts": {
     "start": "vercel dev"
   },
   "author": "k-swar",
-  "license": "MIT",
-  "keywords": []
+  "license": "MIT"
 }
